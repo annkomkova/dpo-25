@@ -16,6 +16,11 @@ h2 {
   font-size: 48rem;
   line-height: 110%;
 }
+h3 {
+  font-size: 32rem;
+  font-weight: 400;
+  line-height: 130%;
+}
 p {
   font-weight: 400;
   line-height: 130%;
@@ -32,6 +37,9 @@ p {
     font-size: 96rem;
     line-height: 100%;
   }
+  &.margin-top {
+    margin-top: 20rem;
+  }
 }
 .black > div {
   display: flex;
@@ -39,6 +47,7 @@ p {
 section {
   padding: 190rem 40rem;
   display: flex;
+  justify-content: space-between;
 
   &.white {
     padding: 60rem 40rem;
@@ -50,53 +59,74 @@ section {
     gap: 190rem;
     color: #d8d8d8;
   }
-  .block {
-    width: 50%;
+}
+#program {
+  width: 1015rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+.hr {
+  width: 100%;
+  height: 1rem;
+  background: linear-gradient(
+    90deg,
+    #151514 0%,
+    rgba(21, 21, 20, 0.9) 94.23%,
+    rgba(21, 21, 20, 0) 100%
+  );
+}
+.program_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.program_info {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  background: linear-gradient(0deg, #333333, #333333),
+    linear-gradient(
+      180deg,
+      rgba(222, 221, 209, 0) 0%,
+      rgba(238, 236, 220, 0.3) 100%
+    ),
+    linear-gradient(0deg, #262626, #262626);
+  border: 1rem solid;
+  border-radius: 100rem;
+  border-image-source: linear-gradient(
+    125.05deg,
+    rgba(183, 180, 162, 0.3) 23.36%,
+    rgba(81, 79, 70, 0.3) 71.73%
+  );
+  box-shadow: 0 4rem 8rem 0 #00000026;
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 130%;
+  color: #d8d8d8;
+  padding: 10rem 40rem;
+  display: inline-block;
+  white-space: initial;
+  cursor: pointer;
+  margin-top: 20rem;
+}
+.block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.stats {
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0 60rem;
+  align-items: flex-start;
+
+  .stat {
+    width: 40%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
   }
-  .stats {
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 60rem;
-
-    .stat {
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  .button {
-    background: linear-gradient(0deg, #333333, #333333),
-      linear-gradient(
-        180deg,
-        rgba(222, 221, 209, 0) 0%,
-        rgba(238, 236, 220, 0.3) 100%
-      ),
-      linear-gradient(0deg, #262626, #262626);
-    border: 1rem solid;
-    border-radius: 100rem;
-    border-image-source: linear-gradient(
-      125.05deg,
-      rgba(183, 180, 162, 0.3) 23.36%,
-      rgba(81, 79, 70, 0.3) 71.73%
-    );
-    box-shadow: 0 4rem 8rem 0 #00000026;
-    font-weight: 500;
-    font-size: 20rem;
-    line-height: 130%;
-    color: #d8d8d8;
-    padding: 10rem 40rem;
-    display: inline-block;
-    white-space: initial;
-    cursor: pointer;
-    margin-top: 20rem;
-  }
-}
-h1,
-h2,
-h3 {
-  font-weight: 700;
 }
