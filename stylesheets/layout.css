@@ -1,0 +1,102 @@
+html {
+  font-size: calc(1vw / 14.4);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  background-color: #151514;
+}
+h2 {
+  font-weight: 600;
+  font-size: 48rem;
+  line-height: 110%;
+}
+p {
+  font-weight: 400;
+  line-height: 130%;
+  font-size: 20rem;
+
+  &.main {
+    font-size: 32rem;
+  }
+  &.gray {
+    color: #616161;
+  }
+  &.semi {
+    font-weight: 600;
+    font-size: 96rem;
+    line-height: 100%;
+  }
+}
+.black > div {
+  display: flex;
+}
+section {
+  padding: 190rem 40rem;
+  display: flex;
+
+  &.white {
+    padding: 60rem 40rem;
+    background-color: white;
+    color: #151514;
+  }
+  &.black {
+    flex-direction: column;
+    gap: 190rem;
+    color: #d8d8d8;
+  }
+  .block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .stats {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 60rem;
+
+    .stat {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .button {
+    background: linear-gradient(0deg, #333333, #333333),
+      linear-gradient(
+        180deg,
+        rgba(222, 221, 209, 0) 0%,
+        rgba(238, 236, 220, 0.3) 100%
+      ),
+      linear-gradient(0deg, #262626, #262626);
+    border: 1rem solid;
+    border-radius: 100rem;
+    border-image-source: linear-gradient(
+      125.05deg,
+      rgba(183, 180, 162, 0.3) 23.36%,
+      rgba(81, 79, 70, 0.3) 71.73%
+    );
+    box-shadow: 0 4rem 8rem 0 #00000026;
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 130%;
+    color: #d8d8d8;
+    padding: 10rem 40rem;
+    display: inline-block;
+    white-space: initial;
+    cursor: pointer;
+    margin-top: 20rem;
+  }
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
