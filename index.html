@@ -8,7 +8,39 @@
     <script src="javascripts/index.js"></script>
   </head>
   <body>
-    <section></section>
+    <header>
+      <nav>
+        <img src="images/navLogo.svg" alt="" />
+        <div class="header">
+          <a href="#program">Программа</a>
+          <a href="#events">Номинации</a>
+          <a href="#jury">Эксперты</a>
+          <a href="#partners">Партнёры</a>
+          <a href="#contacts">Контакты</a>
+        </div>
+      </nav>
+
+      <div class="logoContainer">
+        <img src="images/headerLogo.svg" alt="" class="logo" />
+      </div>
+
+      <div class="info">
+        <div class="place">
+          <img src="images/headerPlace.svg" alt="" />
+          <p>
+            кинотеатр «Художественный» <br />
+            пятница, 21 ноября
+          </p>
+        </div>
+        <div class="links">
+          <a href="#red" class="red">Design</a>
+          <a href="#pink" class="pink">Art</a>
+          <a href="#orange" class="orange">Fashion</a>
+          <a href="#blue" class="blue">Education</a>
+          <a href="#green" class="green">Startup</a>
+        </div>
+      </div>
+    </header>
 
     <section class="white" id="timer">
       <div class="block">
@@ -224,7 +256,7 @@
         <div id="events">
           <div>
             <div class="event">
-              <div><p class="semi red">D1</p></div>
+              <div id="red"><p class="semi red">D1</p></div>
 
               <div class="eventInfo">
                 <h4>Коммуникационный дизайн</h4>
@@ -272,7 +304,7 @@
           </div>
 
           <div class="event">
-            <div><p class="semi pink">А6</p></div>
+            <div id="pink"><p class="semi pink">А6</p></div>
 
             <div class="eventInfo">
               <h4>Саунд</h4>
@@ -283,7 +315,7 @@
           </div>
 
           <div class="event">
-            <div><p class="semi orange">F1</p></div>
+            <div id="orange"><p class="semi orange">F1</p></div>
 
             <div class="eventInfo">
               <h4>Мода</h4>
@@ -296,7 +328,7 @@
           </div>
 
           <div class="event">
-            <div><p class="semi blue">E1</p></div>
+            <div id="blue"><p class="semi blue">E1</p></div>
 
             <div class="eventInfo">
               <h4>Образование</h4>
@@ -308,7 +340,7 @@
           </div>
 
           <div class="event">
-            <div><p class="semi green">S1</p></div>
+            <div id="green"><p class="semi green">S1</p></div>
 
             <div class="eventInfo">
               <h4>Стартапы</h4>
@@ -426,8 +458,20 @@
     <footer>
       <img src="images/footerLogo.svg" alt="" />
       <div class="footer_info">
-        <div class="footer_item"><a href=""></a><a href=""></a></div>
-        <div class="footer_item"></div>
+        <div class="footer_item">
+          <a class="jury" href=""><span>Политика конфиденциальности</span></a>
+          <a class="jury" href=""><span>Политика обработки данных</span></a>
+        </div>
+        <div class="footer_item">
+          <a class="jury" href="mailto:support@dafes.org">
+            <span>support@dafes.org</span>
+            техподдержка
+          </a>
+          <a class="jury" href="mailto:info@dafes.org">
+            <span>info@dafes.org</span>
+            сотрудничество и участие в конкурсах
+          </a>
+        </div>
       </div>
     </footer>
   </body>
