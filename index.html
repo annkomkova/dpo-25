@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DAFES Awards</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <script src="javascripts/index.js"></script>
+    <script src="javascripts/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -44,7 +44,10 @@
 
     <section class="white" id="timer">
       <div class="block">
-        <h2>12 дней 29 часов</h2>
+        <h2>
+          <span class="timer__item timer__days"></span> <br />
+          <span class="timer__item timer__hours"></span>
+        </h2>
         <p class="regular gray">до завершения приёма работ</p>
       </div>
       <div class="block">
@@ -52,7 +55,7 @@
           Присоединитесь к международному сообществу дизайнеров, отправьте свой
           проект на DAFES AWARDS
         </p>
-        <div><a class="button">Отправить проект ↗</a></div>
+        <div><a href="#form" class="button">Отправить проект ↗</a></div>
       </div>
     </section>
 
@@ -241,7 +244,7 @@
         <div id="community">
           <div class="join">
             <h2>Станьте частью сообщества</h2>
-            <button class="apply">Отправить проект ↗</button>
+            <a href="#form" class="button">Отправить проект ↗</a>
           </div>
           <p class="main">
             DAFES Awards — это глобальное признание в сфере дизайна, искусства,

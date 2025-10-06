@@ -175,6 +175,7 @@ section {
   justify-content: space-between;
 }
 .button {
+  text-decoration: none;
   background: linear-gradient(0deg, #333333, #333333),
     linear-gradient(
       180deg,
@@ -191,7 +192,7 @@ section {
   );
   box-shadow: 0 4rem 8rem 0 #00000026;
   font-weight: 500;
-  font-size: 20rem;
+  font-size: 18.9rem;
   line-height: 130%;
   color: #d8d8d8;
   padding: 10rem 40rem;
@@ -445,4 +446,16 @@ footer {
 .footer_item {
   display: flex;
   flex-direction: column;
+}
+
+.timer__item {
+  position: relative;
+}
+
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  bottom: 4rem;
+  left: 120%;
 }
