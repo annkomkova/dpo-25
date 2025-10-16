@@ -151,6 +151,35 @@ a.button {
   flex-direction: column;
   gap: 20rem;
 }
-#forWhom {
-  padding: 90rem auto;
+section.mainGray {
+  flex-direction: column;
+  gap: 60rem;
+  align-items: center;
+  justify-content: center;
+  padding: 90rem 0;
+}
+.block {
+  display: flex;
+}
+#forWhom .block {
+  width: 84%;
+  justify-content: space-between;
+}
+#forWhom .card {
+  width: 32.1%;
+  padding: 16rem 10rem;
+  display: flex;
+  gap: 40rem;
+  flex-direction: column;
+  align-items: center;
+}
+#forWhom h5 {
+  text-align: center;
+}
+#forWhom p {
+  text-align: center;
+  padding: 10rem 30rem;
+}
+#forWhom img {
+  width: 80%;
 }
