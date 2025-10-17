@@ -56,10 +56,15 @@ h5 {
 }
 p,
 label,
-a {
+a,
+li {
   font-weight: 400;
   line-height: 130%;
   font-size: 20rem;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 30rem;
 }
 .white {
   color: #e8e8e8;
@@ -84,10 +89,18 @@ a {
 .jury {
   font-size: 15rem;
 }
+.blueBold {
+  color: #1851c7;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 100%;
+  text-decoration: none;
+  margin-top: 20rem;
+  display: inline-block;
+}
 section {
   display: flex;
-}
-a.button {
 }
 #header {
   background-image: url('../images/headerBg.png');
@@ -140,8 +153,13 @@ a.button {
 }
 .citeImage {
   width: 860rem;
-  background-image: url('../images/cite.png');
   background-size: cover;
+}
+.citeImage.first {
+  background-image: url('../images/cite.png');
+}
+.citeImage.second {
+  background-image: url('../images/cite2.png');
 }
 .citeText {
   width: 1060rem;
@@ -165,10 +183,12 @@ section.mainGray {
   width: 84%;
   justify-content: space-between;
 }
+.card {
+  display: flex;
+}
 #forWhom .card {
   width: 32.1%;
   padding: 16rem 10rem;
-  display: flex;
   gap: 40rem;
   flex-direction: column;
   align-items: center;
@@ -182,4 +202,64 @@ section.mainGray {
 }
 #forWhom img {
   width: 80%;
+}
+#benefits .block {
+  gap: 20rem;
+}
+#benefits .card {
+  width: 880rem;
+  background-color: #fff;
+}
+#benefits .card img {
+  width: 346rem;
+}
+.cardInfo {
+  padding: 20rem 40rem 20rem 20rem;
+  width: 534rem;
+}
+.cardInfo ul {
+  padding: 10rem 0 20rem 30rem;
+}
+.cardInfo li {
+  margin: 20rem 0;
+}
+#cite a {
+  color: #fff;
+}
+#admission .block {
+  width: 868rem;
+  flex-direction: column;
+  gap: 20rem;
+  padding-right: 54rem;
+  position: relative;
+}
+#admission .block::before {
+  left: 30rem;
+  top: 40rem;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  height: calc(100% - 120rem);
+  width: 1rem;
+  background-color: #00000080;
+}
+#admission .cardWrapper {
+  display: flex;
+  gap: 20rem;
+}
+.cardNumber {
+  color: #ddd;
+  background-color: #191919;
+  width: 60rem;
+  height: 60rem;
+  font-size: 36rem;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 12rem 0;
+  text-align: center;
+  margin-top: 40rem;
+}
+#admission .card {
+  flex-direction: column;
+  padding: 40rem 20rem;
 }
