@@ -4,8 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DAFES Awards</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <script src="javascripts/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="javascripts/index.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+
+      const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        loop: true,
+        keyboard: {
+          enabled: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      })
+    </script>
   </head>
   <body>
     <section id="header">
@@ -164,7 +185,7 @@
       <div class="block">
         <div class="cardWrapper">
           <div class="cardNumber">1</div>
-          <div class="card">
+          <div class="cardItem">
             <h5>Оставьте контактные данные</h5>
             <p>
               Наши менеджеры свяжутся с вами через звонок, E-mail или через
@@ -175,7 +196,7 @@
 
         <div class="cardWrapper">
           <div class="cardNumber">2</div>
-          <div class="card">
+          <div class="cardItem">
             <h5>Выберите курсы</h5>
             <p>
               По одному на каждый семестр. Всего семестров два, а курсов на
@@ -187,7 +208,7 @@
 
         <div class="cardWrapper">
           <div class="cardNumber">3</div>
-          <div class="card">
+          <div class="cardItem">
             <h5>Отправьте заявку</h5>
             <p>Менеджеры вскоре с вами свяжутся!</p>
           </div>
@@ -195,7 +216,7 @@
 
         <div class="cardWrapper">
           <div class="cardNumber">4</div>
-          <div class="card">
+          <div class="cardItem">
             <h5>Пока ждете</h5>
             <p>
               можете ознакомиться с другими
@@ -210,7 +231,214 @@
       <a href="" class="button">перейти к заявке</a>
     </section>
 
-    <section id="" class=""></section>
+    <section id="stages" class="mainGray">
+      <h2>Что будет на курсе</h2>
+
+      <div class="blockWrapper">
+        <div class="block">
+          <h5>Три этапа обучения</h5>
+
+          <div class="cardsWrapper">
+            <div class="card">
+              <div class="cardNumber">1</div>
+              <div>
+                <h6>Лекции</h6>
+                <p>
+                  Вы посетите лекции от историков культуры, искусствоведов
+                  и кураторов выставок, преподавателей Школы дизайна НИУ ВШЭ
+                </p>
+              </div>
+              <a href="" class="blueBold">Траектории</a>
+            </div>
+
+            <div class="card">
+              <div class="cardNumber">2</div>
+              <div>
+                <h6>Общение</h6>
+                <p>
+                  Познакомитесь с представителями современного искусства, будете
+                  делиться знаниями друг с другом
+                </p>
+              </div>
+              <a href="" class="blueBold">Работы выпускников</a>
+            </div>
+
+            <div class="card">
+              <div class="cardNumber">3</div>
+              <div>
+                <h6>Практика</h6>
+                <p>
+                  В процессе обучения вы создадите свой арт-проект на <a href=""
+                    >цифровых платформах</a
+                  >
+                  Школы дизайна
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="description" class="mainGray">
+      <h4>Каждый курс состоит из</h4>
+      <div class="block">
+        <div class="blockItem">
+          <h5>Встречи-знакомства</h5>
+          <p>
+            Обозначим задачи курса и формат работы, познакомим с преподавателями
+            и искусствоведческими цифровыми платформами.
+          </p>
+        </div>
+        <div class="blockItem">
+          <h5>13 лекций</h5>
+          <p>
+            Организованы по хронологическому принципу. На занятиях разберём
+            ключевые феномены в истории искусства или дизайна.
+          </p>
+        </div>
+        <div class="blockItem">
+          <h5>Открытые занятия</h5>
+          <p>
+            2-3 занятия проходят в формате экскурсий и встреч с художниками,
+            дизайнерами, архитекторами, кураторами и коллекционерами. Мы обсудим
+            тренды в мире искусства, дизайна и креативных индустрий.
+          </p>
+        </div>
+        <div class="blockItem">
+          <h5>Итоги</h5>
+          <p>
+            курса подводим на панельной дискуссии, где встретимся
+            со специалистами по истории искусства и поучаствуем в диалоге
+            на актуальную тему, а так же проект на профессиональных цифровых
+            платформах Школы Дизайна НИУ ВШЭ.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="teachers" class="mainGray">
+      <h4>Наши преподаватели</h4>
+      <div class="block">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card">
+              <img src="images/teachers/aleksandra-persheeva.png" alt="" />
+              <div class="cardInfo">
+                <div>
+                  <h5>Александра Першеева</h5>
+                  <p>
+                    Преподаватель в области современного искусства с 10-летним
+                    опытом, академический руководитель программы «Современное
+                    искусство» в Школе дизайна.
+                  </p>
+                  <p class="gray">
+                    «История современного искусства», «История кино»
+                  </p>
+                </div>
+                <a href="https://design.hse.ru/team/775" class="blueBold"
+                  >Страница преподавателя</a
+                >
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="images/teachers/broshe.png" alt="" />
+              <div class="cardInfo">
+                <div>
+                  <h5>Пьер-Кристиан Броше</h5>
+                  <p>
+                    Коллекционер, куратор и организатор выставок современного
+                    искусства, телеведущий на канале «Россия-К», книжный
+                    издатель, кинопродюсер и путешественник.
+                  </p>
+                  <p class="gray">«История современного искусства»</p>
+                </div>
+                <a href="https://design.hse.ru/team/18879" class="blueBold"
+                  >Страница преподавателя</a
+                >
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="images/teachers/kavtaradze.png" alt="" />
+              <div class="cardInfo">
+                <div>
+                  <h5>Сергей Кавтарадзе</h5>
+                  <p>
+                    Искусствовед, историк архитектуры, популяризатор науки,
+                    автор книги «Анатомия архитектуры.
+                  </p>
+                  <p class="gray">«История архитектуры»</p>
+                </div>
+                <a href="https://design.hse.ru/team/10294" class="blueBold"
+                  >Страница преподавателя</a
+                >
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="images/teachers/alabyeva.jpg" alt="" />
+              <div class="cardInfo">
+                <div>
+                  <h5>Людмила Алябьева</h5>
+                  <p>
+                    Кандидат филологических наук, доцент, куратор, шеф-редактор
+                    журнала «Теория моды», редактор книжной серии «Библиотека
+                    журнала „Теория моды“». Академический руководитель
+                    Аспирантской школы по искусству и дизайну НИУ ВШЭ.
+                  </p>
+                  <p class="gray">«История костюма и моды»</p>
+                </div>
+                <a href="https://design.hse.ru/team/6081" class="blueBold"
+                  >Страница преподавателя</a
+                >
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="images/teachers/levashov.jpg" alt="" />
+              <div class="cardInfo">
+                <div>
+                  <h5>Владимир Левашов</h5>
+                  <p>
+                    Художественный и фотокритик, историк фотографии, куратор
+                    российских и международных выставок современного искусства,
+                    автор книг «Фотовек. Очень краткая история фотографии
+                    за последние 100 лет» и «Лекции по истории фотографии».
+                  </p>
+                  <p class="gray">«История фотографии»</p>
+                </div>
+                <a href="https://design.hse.ru/team/9879" class="blueBold"
+                  >Страница преподавателя</a
+                >
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="images/teachers/bakina.jpg" alt="" />
+              <div class="cardInfo">
+                <div>
+                  <h5>Татьяна Бакина</h5>
+                  <p>
+                    Культуролог, исследователь истории моды и кинематографа,
+                    регулярный гость подкастов, автор научных и публицистических
+                    статей и аудиолекций о роли костюма в голливудском кино.
+                  </p>
+                  <p class="gray">«История кино»</p>
+                </div>
+                <a href="https://design.hse.ru/team/14" class="blueBold"
+                  >Страница преподавателя</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
 
     <section id="" class=""></section>
   </body>

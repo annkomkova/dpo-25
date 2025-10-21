@@ -28,8 +28,14 @@ body {
 img {
   display: block;
 }
-h1 {
+h1,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
+}
+h1 {
   font-size: 96rem;
   line-height: 100%;
 }
@@ -40,19 +46,20 @@ h2 {
 }
 h3 {
   font-size: 64rem;
-  font-weight: 600;
   line-height: 100%;
   margin-bottom: 60rem;
 }
 h4 {
   font-size: 42rem;
   line-height: 110%;
-  font-weight: 600;
 }
 h5 {
   font-size: 36rem;
   line-height: 110%;
-  font-weight: 600;
+}
+h6 {
+  font-size: 26rem;
+  line-height: 110%;
 }
 p,
 label,
@@ -203,23 +210,38 @@ section.mainGray {
 #forWhom img {
   width: 80%;
 }
-#benefits .block {
+#benefits .block,
+#teachers {
   gap: 20rem;
 }
-#benefits .card {
+#benefits .card,
+#teachers .card {
   width: 880rem;
   background-color: #fff;
+  gap: 30rem;
 }
 #benefits .card img {
   width: 346rem;
 }
+#teachers .card img {
+  width: 314rem;
+  height: 408rem;
+}
 .cardInfo {
   padding: 20rem 40rem 20rem 20rem;
   width: 534rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.cardInfo ul {
+.cardInfo div {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+/* .cardInfo ul {
   padding: 10rem 0 20rem 30rem;
-}
+} */
 .cardInfo li {
   margin: 20rem 0;
 }
@@ -255,11 +277,91 @@ section.mainGray {
   font-size: 36rem;
   font-weight: 600;
   line-height: 100%;
-  padding: 12rem 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 40rem;
 }
 #admission .card {
   flex-direction: column;
   padding: 40rem 20rem;
+}
+.blockWrapper {
+  width: 100%;
+  background-color: #eaeaea;
+}
+#stages .block {
+  width: 1504rem;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 60rem;
+  padding: 80rem 60rem;
+}
+#stages .cardsWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+  gap: 50rem;
+}
+#stages .card {
+  width: 468px;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 30rem;
+  gap: 40rem;
+}
+#stages .cardNumber {
+  width: 44rem;
+  height: 44rem;
+  border-radius: 100%;
+  margin: 0;
+  font-size: 28rem;
+}
+#description .block {
+  flex-wrap: wrap;
+  width: 1148rem;
+  justify-content: space-between;
+  gap: 70rem 0;
+}
+#description .blockItem {
+  width: 540rem;
+  padding-left: 120rem;
+  display: flex;
+  flex-direction: column;
+  gap: 17rem;
+  position: relative;
+}
+#description .blockItem::after {
+  content: '';
+  width: 80rem;
+  height: 80rem;
+  transform: rotate(45deg);
+  background-color: #020202;
+  position: absolute;
+  top: 20rem;
+  left: 0;
+}
+#teachers .swiper {
+  width: 1920rem;
+}
+#teachers .card {
+  margin-right: 40rem;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+  width: 48rem;
+  height: 48rem;
+  background-image: url('../images/swiperButton.svg');
+  background-size: cover;
+}
+.swiper-button-next::after {
+  transform: rotate(180deg);
+}
+.swiper-navigation-icon {
+  width: 0 !important;
+  height: 0 !important;
+}
+#teachers .cardInfo {
+  padding: 50rem 0 30rem;
 }
