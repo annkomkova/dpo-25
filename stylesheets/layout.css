@@ -304,7 +304,7 @@ section.mainGray {
   gap: 50rem;
 }
 #stages .card {
-  width: 468px;
+  width: 468rem;
   background-color: #fff;
   flex-direction: column;
   padding: 30rem;
@@ -364,4 +364,82 @@ section.mainGray {
 }
 #teachers .cardInfo {
   padding: 50rem 0 30rem;
+}
+.faq__openall,
+.faq__closeall {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  margin-left: auto;
+}
+.faq__wrap-header a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+div.faq__item {
+  margin-bottom: 0;
+  padding-bottom: 20rem;
+  font-size: 1.6rem;
+  border-top: 2rem solid #d8d8d8;
+  cursor: pointer;
+}
+.faq__item-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0rem;
+  padding-top: 20rem;
+  cursor: pointer;
+}
+.faq__item-question-text {
+  font-weight: bold;
+  font-family: 'HSE Sans';
+}
+.faq__item.opened .faq__item-question-plus {
+  background-image: url(https://design.hse.ru/assets/new_hope_images/minus-e07d2c19aa56144b4840d2cacc8dc4725315b87a10c631737b6f57a67f48a6b1.svg);
+  background-size: cover;
+}
+.faq__item-question-plus {
+  display: inline-block;
+  width: 30rem;
+  height: 30rem;
+  min-width: 30rem;
+  background-image: url(https://design.hse.ru/assets/new_hope_images/plus-37c0a54e1b12c95fd2407a7d64a6c814ed2240b63e511d279cff3c6c8308f21e.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.faq__item-answer {
+  line-height: 1.5;
+  letter-spacing: 0.3rem;
+  padding-bottom: 20rem;
+  padding-right: 5.5rem;
+  display: none;
+}
+.hidden {
+  display: none !important;
+}
+.faq__wrap {
+  width: 1374rem;
+  display: flex;
+  flex-direction: column;
+  gap: 35rem;
+  padding: 39rem;
+}
+.programHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.programInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 18rem;
+}
+.faq__item-question_title {
+  font-size: 26rem;
+  line-height: 40rem;
+  font-weight: 600;
 }
