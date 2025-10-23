@@ -1,87 +1,264 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   html {
-    font-size: calc(1vw / 3.9);
+    font-size: calc(1vw / 5);
   }
-  section {
+  section,
+  footer {
+    width: 100%;
     overflow: hidden;
     padding: 60rem 32rem;
   }
   section > *,
   .block,
   form,
-  .jury_item,
-  #program {
-    width: 100%;
+  #cite > *,
+  .block,
+  .card,
+  .swiper,
+  .faq__wrap {
+    width: 100% !important;
   }
-  header {
-    background-image: url('../images/mobileHeaderBg.png');
-    width: 100%;
-    height: 756rem;
-    padding: 20rem;
+  .mobile {
+    display: block;
   }
-  .header {
+  .desktop {
     display: none;
-  }
-  header .logo {
-    width: 354rem;
-  }
-  header .info {
-    flex-direction: column-reverse;
-    gap: 40rem;
-    align-items: stretch;
-  }
-  header .place {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  header .links {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-  }
-  header a {
-    text-decoration: none;
-    color: #d8d8d8;
   }
   section {
     flex-direction: column;
     gap: 30rem;
   }
-  .button,
-  .apply {
+  .big {
+    font-weight: 500;
+    font-size: 20rem;
+  }
+  h2 {
+    font-size: 36rem;
+  }
+  h3 {
+    font-size: 40rem;
+    text-align: center;
+    margin: 0;
+  }
+  h4,
+  #stages h5,
+  #plan h5 {
+    font-size: 24rem;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: 22rem;
+    font-weight: 600;
+  }
+  h4 {
+    text-align: center;
+  }
+  section.mainGray {
+    padding: 20rem 0;
+  }
+  .mainGray h2 {
+    font-weight: 600;
+    text-align: center;
+    padding: 0 30rem;
+  }
+  .button {
     width: 100%;
     text-align: center;
     padding: 10rem 20rem;
   }
-  .black > div {
-    flex-direction: column;
-    gap: 60rem;
+  #forWhom .swiper-button-next,
+  #forWhom .swiper-button-prev {
+    top: 96% !important;
   }
-  .stats,
-  #community {
-    flex-direction: column;
-    gap: 40rem;
+  #header {
+    background-position: center;
+    padding: 0;
   }
-  .program_info,
-  .event {
-    flex-direction: column;
+  .headerInfo {
+    flex-direction: column-reverse;
   }
-  footer img {
-    width: 280rem;
+  .headerInfoItem {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
-  .footer_info {
+  /* .headerInfoItem p {
+    font-size: 20rem;
+  } */
+  .headerInfoItem:nth-of-type(2) p:nth-of-type(1) {
+    width: 80%;
+  }
+  .headerInfoItem:nth-of-type(2) {
+    border-bottom: 1rem solid white;
+    padding-bottom: 20rem;
+  }
+  .headerText,
+  #cite {
+    padding: 0;
+  }
+  .headerText h1,
+  .headerText .big {
+    padding: 0 32rem;
+  }
+  .headerText p {
+    margin: 30rem 0;
+  }
+  .headerButtons {
     flex-direction: column;
+    background-color: white;
+    padding: 20rem 10rem;
+    gap: 10rem;
+  }
+  .blueBold {
+    margin: 40rem 0 20rem;
+    font-weight: bold;
+  }
+  #cite {
+    flex-direction: column;
+    gap: 0;
+  }
+  #header + #cite {
+    flex-direction: column-reverse;
+  }
+  .citeImage {
+    height: 350rem;
+  }
+  .citeText {
+    padding: 20rem;
+  }
+  #forWhom .card {
+    padding: 0 20rem 30rem 20rem;
     gap: 20rem;
+    width: 100%;
   }
-  .footer_item {
-    gap: 8rem;
+  #forWhom img {
+    width: 50%;
   }
-  .tag {
-    padding: 10rem 17rem;
+  .block {
+    flex-direction: column;
+  }
+  #benefits .block {
+    flex-direction: column-reverse;
+    gap: 30rem;
+  }
+  #benefits img {
+    display: none;
+  }
+  #admission .block {
+    padding: 0;
+  }
+  #admission .cardWrapper {
+    width: 100%;
+    padding: 20rem;
+  }
+  .cardNumber {
+    margin: 0;
+    width: 40rem;
+    height: 40rem;
+    font-size: 24rem;
+  }
+  .cardItem {
+    width: calc(100% - 60rem);
+  }
+  #admission .block::before {
+    display: none;
+  }
+  #admission .button {
+    width: 94% !important;
+  }
+  #stages .block {
+    gap: 30rem;
+    flex-direction: column;
+    padding: 20rem 0;
+  }
+  #stages h5 {
+    padding-left: 20rem;
+  }
+  #plan h5 {
+    padding-left: 30rem;
+  }
+  #stages .cardsWrapper,
+  .programHeader {
+    gap: 30rem;
+    flex-direction: column;
+  }
+  #description {
+    padding: 20rem;
+  }
+  #description .blockItem::after {
+    width: 40rem;
+    height: 40rem;
+    top: 10rem;
+  }
+  #description .blockItem {
+    padding-left: 60rem;
+    width: 100%;
+  }
+  #teachers .card {
+    flex-direction: column;
+    min-height: 1050rem;
+  }
+  #teachers .card img {
+    width: 100%;
     height: auto;
   }
-  form .button {
-    font-weight: 400;
+  #teachers .cardInfo {
     padding: 20rem;
+    width: 100%;
+  }
+  .programHeader {
+    align-items: flex-start;
+  }
+  .faq__wrap {
+    gap: 0;
+  }
+  .faq__wrap h4 {
+    text-align: left;
+  }
+  .faq__item-answer {
+    font-size: 16rem;
+    margin-top: 20rem;
+  }
+  .openButton a,
+  .closeButton a,
+  .faq__item-question_title {
+    font-size: 18rem;
+    font-weight: bold;
+  }
+  form {
+    background-color: white;
+  }
+  label {
+    padding: 0 16rem;
+  }
+  input,
+  select {
+    width: 94%;
+    margin: 10rem auto 30rem;
+    display: block;
+    height: 60rem;
+    font-size: 16rem;
+  }
+  form div {
+    flex-direction: column-reverse;
+    padding: 10rem;
+    gap: 20rem;
+  }
+  form .button {
+    width: 100%;
+    margin: 0 auto;
+  }
+  footer .block {
+    padding: 20rem 0;
+  }
+  .footerInfo {
+    width: 100%;
+  }
+  .footerInfo div {
+    flex-direction: column;
+    gap: 10rem;
+  }
+  footer h4 {
+    text-align: left;
+    width: 76%;
   }
 }

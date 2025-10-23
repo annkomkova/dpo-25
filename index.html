@@ -14,9 +14,21 @@
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
 
-      const swiper = new Swiper('.swiper', {
+      const swiperTeachers = new Swiper('#teachers .swiper', {
         direction: 'horizontal',
         slidesPerView: 'auto',
+        loop: true,
+        keyboard: {
+          enabled: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      })
+
+      const swiperForWhom = new Swiper('#forWhom .swiper', {
+        direction: 'horizontal',
         loop: true,
         keyboard: {
           enabled: true
@@ -78,7 +90,8 @@
 
     <section id="forWhom" class="mainGray">
       <h3>Для кого этот курс</h3>
-      <div class="block">
+
+      <div class="block desktop">
         <div class="card">
           <img src="images/forWhom1.svg" alt="" />
           <div>
@@ -109,6 +122,49 @@
               в&nbsp;качестве профессионала
             </p>
           </div>
+        </div>
+      </div>
+
+      <div class="block mobile">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card">
+              <img src="images/forWhom1.svg" alt="" />
+              <div>
+                <h5>Новички в мире искусства</h5>
+                <p>
+                  Курс подходит как для тех, кто всё еще учится,
+                  так&nbsp;и&nbsp;для&nbsp;тех,&nbsp;кто хочет попробовать себя
+                  в&nbsp;новой профессии
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="images/forWhom2.svg" alt="" />
+              <div>
+                <h5>Интересующиеся искусством</h5>
+                <p>
+                  Курс подходит для любителей искусства, желающих поднять
+                  уровень знаний и&nbsp;насмотренности
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="images/forWhom3.svg" alt="" />
+              <div>
+                <h5>Начинающие искусствоведы</h5>
+                <p>
+                  Если вы разбираетесь в&nbsp;искусстве, и&nbsp;хотите проявить
+                  себя в&nbsp;качестве профессионала
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
@@ -454,11 +510,11 @@
                   в сентябре 2025 и январе 2026 года.
                 </p>
               </div>
-              <div class="faq__wrap-header">
-                <div class="faq__openall">
+              <div class="programButtons">
+                <div class="openButton">
                   <a href="#"> Развернуть все </a>
                 </div>
-                <div class="faq__closeall hidden">
+                <div class="closeButton hidden">
                   <a href="#"> Свернуть все </a>
                 </div>
               </div>
@@ -467,50 +523,258 @@
             <div class="js_faq__item faq__item">
               <div class="faq__item-question">
                 <div class="faq__item-question-text page-edi">
-                  <div class="faq__item-question_title">
-                    <div class="faq__item-question_title">
-                      Основы проектирования многостраничного издания
-                    </div>
-                  </div>
+                  <h6 class="faq__item-question_title">
+                    Основы проектирования многостраничного издания
+                  </h6>
                 </div>
                 <div class="faq__item-question-plus"></div>
               </div>
-              <div class="faq__item-answer page-edi">
-                <p>
-                  Выполним многостраничное издание: книгу, брошюру или журнал.
-                  Изучим темпоритмику, работу с&nbsp;типографикой, модульной
-                  сеткой, структурой и&nbsp;содержанием издания. Будем собирать
-                  и&nbsp;редактировать визуальный и&nbsp;текстовый контент.
-                  Поработаем с&nbsp;разными жанрами текста и&nbsp;графическими
-                  форматами.
-                </p>
+              <p class="faq__item-answer page-edi">
+                Выполним многостраничное издание: книгу, брошюру или журнал.
+                Изучим темпоритмику, работу с&nbsp;типографикой, модульной
+                сеткой, структурой и&nbsp;содержанием издания. Будем собирать
+                и&nbsp;редактировать визуальный и&nbsp;текстовый контент.
+                Поработаем с&nbsp;разными жанрами текста и&nbsp;графическими
+                форматами.
+              </p>
+            </div>
+
+            <div class="js_faq__item faq__item">
+              <div class="faq__item-question">
+                <div class="faq__item-question-text page-edi">
+                  <h6 class="faq__item-question_title">
+                    Инструменты вёрстки многостраничных изданий
+                  </h6>
+                </div>
+                <div class="faq__item-question-plus"></div>
+              </div>
+              <p class="faq__item-answer page-edi">
+                Освоим интерфейс программы: поработаем со&nbsp;страницами,
+                шаблонами, изображениями и&nbsp;модульными сетками. Научимся
+                работать со&nbsp;стилями и&nbsp;свойствами фрейма, выполним
+                короткие практические задания. На&nbsp;финальном этапе
+                подготовим макет к&nbsp;печати.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <a href="" class="button">Записаться на курс</a>
+        <a href="" class="button light">задать вопрос</a>
+        <a href="" class="button light">Узнать больше</a>
+      </div>
+    </section>
+
+    <section id="plan" class="mainGray">
+      <h5>Вот что произойдет за год</h5>
+      <div class="block">
+        <div class="card cardInfo">
+          <div>
+            <p class="bold">Знание истории и понимание контекста</p>
+            <p>
+              Вы прослушаете два цикла лекций по истории искусства и дизайна
+            </p>
+          </div>
+          <a href="" class="blueBold">Выбрать курсы</a>
+        </div>
+        <div class="card cardInfo">
+          <div>
+            <p class="bold">Систематизация знаний</p>
+            <p>
+              Научитесь раскладывать по полочкам полученные знания с помощью
+              платформы <a href="">timeline.gallllery.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="card cardInfo">
+          <div>
+            <p class="bold">Полезные знакомства</p>
+            <p>
+              Познакомитесь с ключевыми фигурами современного мира искусства
+            </p>
+          </div>
+        </div>
+        <div class="card cardInfo">
+          <div>
+            <p class="bold">Развитие насмотренности</p>
+            <p>Своими глазами увидите, как работают столичные арт-институции</p>
+          </div>
+          <a href="" class="blueBold">Подробнее о проекте «Art»</a>
+        </div>
+        <div class="card cardInfo">
+          <div>
+            <p class="bold">Авторский проект</p>
+            <p>
+              Вы станете куратором цифровой выставки, спроектируете экскурсию
+              или авторский таймлайн на профессиональных искусствоведческих
+              цифровых платформах Школы дизайна НИУ ВШЭ
+            </p>
+          </div>
+        </div>
+        <div class="card cardInfo">
+          <div>
+            <p class="bold">Общение с профессионалами</p>
+            <p>
+              Примете участие в экспертной дискуссии со  специалистами
+              по истории искусства и дизайна
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="mainGray">
+      <h2>Часто задаваемые вопросы</h2>
+
+      <div class="block">
+        <div class="programWrapper">
+          <div class="faq__wrap">
+            <div class="programHeader">
+              <div class="programInfo">
+                <h4>Общая информация</h4>
+              </div>
+              <div class="programButtons">
+                <div class="openButton">
+                  <a href="#"> Развернуть все </a>
+                </div>
+                <div class="closeButton hidden">
+                  <a href="#"> Свернуть все </a>
+                </div>
               </div>
             </div>
 
             <div class="js_faq__item faq__item">
               <div class="faq__item-question">
                 <div class="faq__item-question-text page-edi">
-                  <div class="faq__item-question_title">
-                    Инструменты вёрстки многостраничных изданий
-                  </div>
+                  <h6 class="faq__item-question_title">
+                    Какие документы я получу по окончании программы?
+                  </h6>
                 </div>
                 <div class="faq__item-question-plus"></div>
               </div>
-              <div class="faq__item-answer page-edi">
-                <p>
-                  Освоим интерфейс программы: поработаем со&nbsp;страницами,
-                  шаблонами, изображениями и&nbsp;модульными сетками. Научимся
-                  работать со&nbsp;стилями и&nbsp;свойствами фрейма, выполним
-                  короткие практические задания. На&nbsp;финальном этапе
-                  подготовим макет к&nbsp;печати.
-                </p>
+              <p class="faq__item-answer page-edi">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+                eius impedit unde. Laudantium quos repellat obcaecati minima
+                laborum, quia ducimus aliquam, accusamus autem in nemo
+                dignissimos suscipit repellendus. Amet, vitae.
+              </p>
+            </div>
+
+            <div class="js_faq__item faq__item">
+              <div class="faq__item-question">
+                <div class="faq__item-question-text page-edi">
+                  <h6 class="faq__item-question_title">
+                    Над какими проектами я буду работать?
+                  </h6>
+                </div>
+                <div class="faq__item-question-plus"></div>
               </div>
+              <p class="faq__item-answer page-edi">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                perspiciatis nulla nesciunt distinctio nostrum sit unde earum,
+                non velit voluptates, consequuntur beatae eum eius, enim eaque
+                at atque voluptas officia.
+              </p>
+            </div>
+
+            <div class="js_faq__item faq__item">
+              <div class="faq__item-question">
+                <div class="faq__item-question-text page-edi">
+                  <h6 class="faq__item-question_title">
+                    Какова стоимость курса? Какие существуют способы оплаты,
+                    есть ли скидки и рассрочка?
+                  </h6>
+                </div>
+                <div class="faq__item-question-plus"></div>
+              </div>
+              <p class="faq__item-answer page-edi">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                labore, ad alias debitis necessitatibus quo vitae dolorum error,
+                est sapiente libero voluptates natus ut! Error voluptate quasi
+                voluptatum tempora voluptatem?
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="block">
+        <a href="" class="button">Записаться на курс</a>
+        <a href="" class="button light">задать вопрос</a>
+        <a href="" class="button light">Узнать больше</a>
+      </div>
+    </section>
+
+    <section id="form" class="mainGray">
+      <h2>Оставить заявку</h2>
+
+      <form action="">
+        <label for="fio">ФИО</label>
+        <input name="fio" type="text" placeholder="Иванов Иван Иванович" />
+
+        <label for="email">Электронная почта</label>
+        <input name="email" type="text" placeholder="qwerty@yandex.ru" />
+
+        <label for="phone">Телефон</label>
+        <input name="phone" type="tel" placeholder="+71234567890" />
+
+        <label for="call">Как с вами лучше связаться?</label>
+        <select name="call" id="">
+          <option value="message">написать в Telegram</option>
+          <option value="call">позвонить по телефону</option>
+        </select>
+
+        <label for="telegram"
+          >Если вы выбрали Telegram как способ связи, укажите имя
+          пользователя</label
+        >
+        <input name="telegram" type="text" placeholder="@username" />
+
+        <label for="message">Ваш комментарий</label>
+        <input
+          name="message"
+          type="text"
+          placeholder="Если у вас есть комментарии, пожалуйста, напишите здесь"
+        />
+
+        <div>
+          <p>
+            Отправляя сообщение, я соглашаюсь на обработку персональных данных
+            в соответствии с пунктом 3.7 <a href="">Положения НИУ ВШЭ</a>
+          </p>
+          <button class="button">Отправить сообщение</button>
+        </div>
+      </form>
     </section>
 
     <section id="" class=""></section>
+
+    <footer>
+      <h4>
+        По вопросам поступления обращайтесь к&nbsp;менеджеру по&nbsp;работе
+        со&nbsp;слушателями
+      </h4>
+      <div class="block">
+        <div class="footerInfo">
+          <p class="uppercase">Телефон</p>
+          <hr />
+          <div>
+            <p class="uppercase">Кристина Докторова</p>
+            <p>+ 7 (499) 444-02-84, добавочный 723</p>
+          </div>
+        </div>
+        <div class="footerInfo">
+          <p class="uppercase">email</p>
+          <hr />
+          <p>dop-design@hse.ru</p>
+        </div>
+      </div>
+      <p>
+        Мы работаем с понедельника <br />
+        по пятницу, с 10:30 до 18:30
+      </p>
+    </footer>
   </body>
 </html>

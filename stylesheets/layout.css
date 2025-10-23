@@ -28,6 +28,11 @@ body {
 img {
   display: block;
 }
+p a {
+  font-size: inherit;
+  text-decoration: none;
+  color: #1851c7;
+}
 h1,
 h3,
 h4,
@@ -57,7 +62,8 @@ h5 {
   font-size: 36rem;
   line-height: 110%;
 }
-h6 {
+h6,
+label {
   font-size: 26rem;
   line-height: 110%;
 }
@@ -153,6 +159,7 @@ section {
   align-items: center;
   color: #fff;
   text-decoration: none;
+  border-radius: 4rem;
 }
 .headerButtons {
   display: flex;
@@ -365,15 +372,15 @@ section.mainGray {
 #teachers .cardInfo {
   padding: 50rem 0 30rem;
 }
-.faq__openall,
-.faq__closeall {
+.openButton,
+.closeButton {
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 2rem;
   margin-left: auto;
 }
-.faq__wrap-header a {
+.programButtons a {
   text-decoration: none;
   font-weight: 700;
   color: black;
@@ -421,6 +428,9 @@ div.faq__item {
 .hidden {
   display: none !important;
 }
+.mobile {
+  display: none;
+}
 .faq__wrap {
   width: 1374rem;
   display: flex;
@@ -438,8 +448,95 @@ div.faq__item {
   flex-direction: column;
   gap: 18rem;
 }
-.faq__item-question_title {
+#program .block:nth-of-type(2) {
+  gap: 20rem;
+  padding: 10rem;
+}
+.light {
+  color: #17181a;
+  border: 2rem solid #17181a;
+  background-color: transparent;
+}
+#plan .cardInfo {
+  background-color: white;
+  padding: 30rem;
+  width: 473rem;
+  min-height: 290rem;
+}
+#plan .block {
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+}
+.bold {
+  font-weight: bold;
   font-size: 26rem;
-  line-height: 40rem;
-  font-weight: 600;
+  line-height: 140%;
+}
+form {
+  width: 932rem;
+}
+input,
+select {
+  width: 100%;
+  background-color: white;
+  padding: 15rem 20rem;
+  color: #17181a;
+  border: 2rem solid #d8d8d8;
+  outline: none;
+  margin: 10rem 0 30rem;
+}
+input:focus {
+  border: 2rem solid #17181a;
+}
+input::placeholder {
+  color: #8b8b8b;
+}
+form div {
+  width: 100%;
+  display: flex;
+  gap: 60rem;
+  background-color: white;
+  padding: 30rem 10rem;
+}
+form .button {
+  width: 600rem;
+  border: none;
+}
+form p,
+a {
+  color: #8b8b8b;
+  font-size: 14rem;
+  line-height: 24rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 90rem;
+  background-color: #17181a;
+  color: #e8e8e8;
+  padding: 47rem 118rem;
+}
+footer h4 {
+  width: 50%;
+}
+footer .block {
+  gap: 80rem;
+  padding: 20rem;
+}
+.footerInfo {
+  width: 50%;
+}
+.footerInfo div {
+  display: flex;
+  justify-content: space-between;
+}
+footer hr {
+  height: 2rem;
+  background-color: white;
+  border: none;
+  margin: 10rem 0 20rem;
+}
+.uppercase {
+  text-transform: uppercase;
 }
